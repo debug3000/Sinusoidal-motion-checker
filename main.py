@@ -116,7 +116,6 @@ if hauteurs:
 else:
     print("Aucun marqueur ArUco détecté.")
 
-# Assurez-vous que cette conversion est faite après avoir collecté toutes vos données
 # Convertir les listes en arrays NumPy pour l'analyse
 timestamps = np.array(timestamps)
 positions = np.array(positions)
@@ -178,7 +177,6 @@ if len(timestamps) > 0 and len(positions) > 0:
     output_folder = 'png'  # Exemple : '/chemin/vers/dossier'
     plt.tight_layout()
     plt.savefig(graph_filename, dpi=600)
-
     plt.show(dpi=600)
 
 
